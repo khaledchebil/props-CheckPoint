@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from './profile/Profile'
 import './App.css';
-import PropTypes from 'prop-types';
+
 
 function App(props) {  
  
@@ -11,7 +11,7 @@ function App(props) {
   return (
     <div style = {styleItem}>
    
-         <Profile fullName ={'Khaled'} bio ={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} profession ={'Student'}/> 
+         <Profile fullName ='Khaled' bio ={`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`} profession ='Student'/> 
    
       <p> {props.children}</p>
   
@@ -22,8 +22,3 @@ function App(props) {
 
 export default App;
 
-Profile.protoTypes = {
-  fullName : PropTypes.number,
-  bio : PropTypes.string,
-  profession: PropTypes.bool
-};
