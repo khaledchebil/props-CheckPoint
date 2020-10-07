@@ -1,6 +1,7 @@
 import React from 'react'
 import HandleName from './handleName'
 import '../App.css';
+import PropTypes from 'prop-types';
 
 const Profile = ({fullName, bio, profession}) => {
     const alertMyInput = (name) => alert(name + fullName);
@@ -18,3 +19,9 @@ const Profile = ({fullName, bio, profession}) => {
 }
 
 export default Profile
+
+Profile.protoTypes = {
+    fullName : PropTypes.number,
+    bio : PropTypes.string,
+    profession: PropTypes.string
+  };
